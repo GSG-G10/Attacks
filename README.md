@@ -86,7 +86,7 @@ The exploit URL can be disguised as a normal link, which encourages the victim t
 
 **Safely validating untrusted HTML input**
 
-> Many operators of particular web applications (e.g. forums and webmail) allow users to utilize a limited subset of HTML markup. When accepting HTML input from users (say, `<b>very</b>` large), output encoding (such as `&lt;b&gt;very&lt;/b&gt;` large) will not suffice since the user input needs to be rendered as HTML by the browser (so it shows as "very large", instead of "<b>very</b> large"). Stopping an XSS attack when accepting HTML input from users is much more complex in this situation. Untrusted HTML input must be run through an HTML sanitization engine to ensure that it does not contain XSS code.
+> Many operators of particular web applications (e.g. forums and webmail) allow users to utilize a limited subset of HTML markup. When accepting HTML input from users (say, `<b>very</b>` large), output encoding (such as `&lt;b&gt;very&lt;/b&gt;` large) will not suffice since the user input needs to be rendered as HTML by the browser (so it shows as "`very large`", instead of "`<b>very</b> large`"). Stopping an XSS attack when accepting HTML input from users is much more complex in this situation. Untrusted HTML input must be run through an HTML sanitization engine to ensure that it does not contain XSS code.
 
 ### Cross Site Request Forgery (CSRF)
 
