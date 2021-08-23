@@ -82,11 +82,11 @@ The exploit URL can be disguised as a normal link, which encourages the victim t
 
 ### Cross Site Scripting (XSS)
 **Disabling scripts**
-> While Web 2.0 and Ajax developers require the use of JavaScript,[33] some web applications are written to allow operation without the need for any client-side scripts.[34] This allows users, if they choose, to disable scripting in their browsers before using the application. In this way, even potentially malicious client-side scripts could be inserted unescaped on a page, and users would not be susceptible to XSS attacks.
+> While Web 2.0 and Ajax developers require the use of JavaScript, some web applications are written to allow operation without the need for any client-side scripts. This allows users, if they choose, to disable scripting in their browsers before using the application. In this way, even potentially malicious client-side scripts could be inserted unescaped on a page, and users would not be susceptible to XSS attacks.
 
 **Safely validating untrusted HTML input**
 
-> Many operators of particular web applications (e.g. forums and webmail) allow users to utilize a limited subset of HTML markup. When accepting HTML input from users (say, <b>very</b> large), output encoding (such as &lt;b&gt;very&lt;/b&gt; large) will not suffice since the user input needs to be rendered as HTML by the browser (so it shows as "very large", instead of "<b>very</b> large"). Stopping an XSS attack when accepting HTML input from users is much more complex in this situation. Untrusted HTML input must be run through an HTML sanitization engine to ensure that it does not contain XSS code.
+> Many operators of particular web applications (e.g. forums and webmail) allow users to utilize a limited subset of HTML markup. When accepting HTML input from users (say, `<b>very</b>` large), output encoding (such as `&lt;b&gt;very&lt;/b&gt;` large) will not suffice since the user input needs to be rendered as HTML by the browser (so it shows as "very large", instead of "<b>very</b> large"). Stopping an XSS attack when accepting HTML input from users is much more complex in this situation. Untrusted HTML input must be run through an HTML sanitization engine to ensure that it does not contain XSS code.
 
 ### Cross Site Request Forgery (CSRF)
 
